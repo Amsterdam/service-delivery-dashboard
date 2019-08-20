@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Monitoring Dashboard - Kibana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="main-java.js"></script>
+</head>
+
+<body>
+    <!-------------------------------------------- Menu bar ---------------------------------------------------->
+    <h1 align="center">Logging and monitoring dashboard</h1>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Matomo</a>
+        <a href="kibana.html" class="active">Kibana</a>
+        <a href="up-time-robot.html">Up-time-robot</a>
+        <a href="grafana.html">Grafana</a>
+        <a href="external-links.html">External links</a>
+        <a href="javascript:void(0);" class="icon" onclick="navigationBar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+    <!-------------------------------------------- KIBANA SECTION --------------------------------------------->
+
+    <h3 align="center"> Backend API logs filtered on non succesful http responses (so not 200, 201 etc.) from the
+        last 24 hours </h3>
+    <h4 align="center"> You need a vpn connection to shared-services to accesss Kibana</h4>
+
+    <div class="container">
+        <div class="box-wide">
+            <p> Kibana interactive dashboard </p>
+            <iframe class="iframe-scaled"
+                src="https://logs.data.amsterdam.nl/app/kibana#/dashboard/5c1eee00-7b03-11e9-9935-d121f54db619?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-24h%2Cmode%3Arelative%2Cto%3Anow))"></iframe>
+        </div>
+    </div>
+
+    <div class="container">
+            <div class="box">
+                <p> Amount of non succesful http responses sorted on backend name</p>
+                <iframe class="iframe-scaled"
+                    src="https://logs.data.amsterdam.nl/app/kibana#/visualize/edit/84c6e990-7af7-11e9-9935-d121f54db619?embed=true&_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-24h%2Cmode%3Aquick%2Cto%3Anow))"></iframe>
+            </div>
+            <div class="box">
+                <p> Non succesful http responses sorted on backend name, then on timestamp, then on http response code</p>
+                <iframe class="iframe-scaled"
+                    src="https://logs.data.amsterdam.nl/app/kibana#/visualize/edit/79166760-7aed-11e9-9935-d121f54db619?embed=true&_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-24h%2Cmode%3Aquick%2Cto%3Anow))"></iframe>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="box">
+                    <p> Amount of 500s http responses sorted on backend name</p>
+                    <iframe class="iframe-scaled"
+                        src="https://logs.data.amsterdam.nl/app/kibana#/visualize/edit/ab6a20e0-c32b-11e9-987f-cd224dd7dfd8?embed=true&_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-24h%2Cmode%3Aquick%2Cto%3Anow))"></iframe>
+                </div>
+                <div class="box">
+                    <p> Amount of non 200 http responses for cluster_api_bag</p>
+                    <iframe class="iframe-scaled"
+                        src="https://logs.data.amsterdam.nl/app/kibana#/visualize/edit/f0216ad0-c32c-11e9-987f-cd224dd7dfd8?embed=true&_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-24h%2Cmode%3Aquick%2Cto%3Anow))"></iframe>
+                </div>
+            </div>
+
+</body>
+
+</html>
