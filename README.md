@@ -13,12 +13,12 @@ There are a couple of dashboards scraped together in an overview for Service Del
     - The link to the Amsterdam logging guidelines
     
 # Limitations
-This dashboard is not meant to be any kind of exhaustive application.
-It is merely a functional tool meant to give an overview of all the monitoring tools in use at Datapunt.
-Kibana can not be accessed from an ADW workspot.
-TopdeskC can only be accessed from an ADW workspot.
+  - This dashboard is not meant to be any kind of exhaustive application.
+  - It is merely a functional tool meant to give an overview of all the monitoring tools in use at Datapunt.
+  - Kibana can not be accessed from an ADW workspot.
+  - TopdeskC can only be accessed from an ADW workspot.
 
 # Instructions
-A general login functionality has not been build. Log into one of the widgets at the Matomo or Kibana dashboard and hit refresh to load the rest.
-You need a connection to the shared services vpn at datapunt to access most of the content. 
-Login credentials can be requested at Service Delivery/front office at Datapunt.
+  - A general login functionality has not been build. Log into one of the widgets at the Matomo or Kibana dashboard and hit refresh to load the rest.
+  - You need a connection to the shared services vpn at datapunt to access most of the content. 
+  - Login credentials can be requested at Service Delivery/front office at Datapunt.
