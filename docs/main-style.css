@@ -55,7 +55,7 @@ body {
 .iframe-container {
     /* set a iframe-container that scales according to a certain ratio between height and width*/
     /*padding-top: 56.25%; ensures the heigth of the iframe scales with the width according to a 16/9 ratio */
-    padding-top: 60%;
+    padding-top: 70%;
     position: relative;
 }
 
