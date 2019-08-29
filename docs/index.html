@@ -28,32 +28,91 @@
     </div>
 
     <!--Matomo SECTION -->
-    <h3 align="center"> Visitor data for <a href="http://data.amsterdam.nl" target="_blank">data.amsterdam.nl</a></h3>
-
-    <div class="flex-container">
+    <!--8 real time visitor counters of the most visited websites as of 01-09-2019-->
+    <div class="flex-container" style=height:250px>
         <!-- create a flexible container that scales with screen size-->
         <div class="box">
             <!-- divide the container in 2 boxes next to each other-->
-            <p title="for city data (prod)"> Amount of visits over the last 30 days </p>
+            <p title="for city data (prod)"> City Data </p>
             <div class="iframe-container">
                 <!-- Create a container within the box for the iframe. This is the box that determines the heigth-->
                 <!-- create the iframe -->
-                <iframe class="iframe-scaled" src="https://analytics.data.amsterdam.nl/index.php?module=Widgetize&action=iframe&containerId=VisitOverviewWithGraph&disableLink=0&widget=1&moduleToWidgetize=CoreHome&actionToWidgetize=renderWidgetContainer&idSite=1&period=range&date=previous30&disableLink=1&widget=1&columns=nb_visits,nb_uniq_visitors" 
-                scrolling="yes"></iframe>
+                <iframe class="iframe-scaled" src="https://analytics.data.amsterdam.nl/index.php?module=Widgetize&action=iframe&disableLink=0&widget=1&moduleToWidgetize=Live&actionToWidgetize=getSimpleLastVisitCount&idSite=1&period=range&date=previous7&disableLink=1&widget=1&last_minutes=10"
+                scrolling="no"></iframe>
             </div>
         </div>
+
         <div class="box">
-            <p title="for city data (prod)"> Amount of visits over the last 30 days from ADW workspots</p>
+            <p title="for city data (prod)"> Signalen </p>
             <div class="iframe-container">
-                <!-- The following link contains a visitIp adress of 46.17.24.0
-                This is a partly masked IP adress of all computers with an ADW work environment.
-                Therefore this is not privacy sensitive data-->
-                <iframe class="iframe-scaled" src="https://analytics.data.amsterdam.nl/index.php?module=Widgetize&action=iframe&containerId=VisitOverviewWithGraph&disableLink=0&widget=1&moduleToWidgetize=CoreHome&actionToWidgetize=renderWidgetContainer&idSite=1&period=range&date=previous30&disableLink=1&widget=1&columns=nb_visits,nb_uniq_visitors&segment=visitIp==46.17.24.0" 
-                scrolling="yes"></iframe>
+                <iframe class="iframe-scaled" src="https://analytics.data.amsterdam.nl/index.php?module=Widgetize&action=iframe&disableLink=0&widget=1&moduleToWidgetize=Live&actionToWidgetize=getSimpleLastVisitCount&idSite=13&period=range&date=previous7&disableLink=1&widget=1"
+                scrolling="no"></iframe>
+                </div>
+        </div>
+
+        <div class="box">
+            <p title="for city data (prod)"> Erfpacht/overstapportaal</p>
+            <div class="iframe-container">
+                <iframe class="iframe-scaled" src="https://analytics.data.amsterdam.nl/index.php?module=Widgetize&action=iframe&disableLink=0&widget=1&moduleToWidgetize=Live&actionToWidgetize=getSimpleLastVisitCount&idSite=7&period=range&date=previous7&disableLink=1&widget=1" 
+                scrolling="no"></iframe>
+            </div>
+        </div>
+
+        <div class="box">
+            <p title="for city data (prod)"> api.data.amsterdam.nl </p>
+            <div class="iframe-container">
+                <iframe class="iframe-scaled" src="https://analytics.data.amsterdam.nl/index.php?module=Widgetize&action=iframe&disableLink=0&widget=1&moduleToWidgetize=Live&actionToWidgetize=getSimpleLastVisitCount&idSite=12&period=range&date=previous7&disableLink=1&widget=1"
+                    scrolling="no"></iframe>
             </div>
         </div>
     </div>
 
+    <div class="flex-container" style=height:250px>
+        <div class="box">
+            <p title="for city data (prod)"> Mijn Amsterdam</p>
+            <div class="iframe-container">
+                <iframe class="iframe-scaled"
+                    src="https://analytics.data.amsterdam.nl/index.php?module=Widgetize&action=iframe&disableLink=0&widget=1&moduleToWidgetize=Live&actionToWidgetize=getSimpleLastVisitCount&idSite=28&period=range&date=previous7&disableLink=1&widget=1"
+                    scrolling="no"></iframe>
+            </div>
+        </div>
+    
+        <div class="box">
+            <p title="for city data (prod)"> Subsidieregister</p>
+            <div class="iframe-container">
+                <iframe class="iframe-scaled"
+                    src="https://analytics.data.amsterdam.nl/index.php?module=Widgetize&action=iframe&disableLink=0&widget=1&moduleToWidgetize=Live&actionToWidgetize=getSimpleLastVisitCount&idSite=5&period=range&date=previous7&disableLink=1&widget=1"
+                    scrolling="no"></iframe>
+            </div>
+        </div>
+    
+        <div class="box">
+            <p title="for city data (prod)"> Hior (Handboek Inrichting Openbare Ruimte)</p>
+            <div class="iframe-container">
+                <iframe class="iframe-scaled"
+                    src="https://analytics.data.amsterdam.nl/index.php?module=Widgetize&action=iframe&disableLink=0&widget=1&moduleToWidgetize=Live&actionToWidgetize=getSimpleLastVisitCount&idSite=15&period=range&date=previous7&disableLink=1&widget=1"
+                    scrolling="no"></iframe>
+            </div>
+        </div>
+
+        <div class="box">
+            <p title="for city data (prod)"> Gebied in Beeld </p>
+            <div class="iframe-container">
+                <iframe class="iframe-scaled"
+                    src="https://analytics.data.amsterdam.nl/index.php?module=Widgetize&action=iframe&disableLink=0&widget=1&moduleToWidgetize=Live&actionToWidgetize=getSimpleLastVisitCount&idSite=11&period=range&date=previous7&disableLink=1&widget=1"
+                    scrolling="no"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box" style=width:100%>
+        <p> All websites visitor data for the last 30 days</p>
+            <iframe class="iframe-scaled"
+                src="https://analytics.data.amsterdam.nl/index.php?module=Widgetize&action=iframe&moduleToWidgetize=MultiSites&actionToWidgetize=standalone&idSite=1&period=range&date=previous30"></iframe>
+        </div>
+    </div>
+        
     <div class="flex-container">
         <div class="box">
             <p title="for city data (prod)"> Visitor actions of the last 30 days </p>
@@ -72,7 +131,6 @@
         </div>
     </div>
 
-
     <div class="flex-container">
         <div class="box">
             <p title="Unique visitors divided by weekdays over the last 30 days"> Visits of the last 30 days divided by
@@ -87,15 +145,6 @@
             <p title="flow stuff"> searches without result from the last 30 days </p>
             <iframe class="iframe-scaled" src="https://analytics.data.amsterdam.nl/index.php?module=Widgetize&action=iframe&disableLink=0&widget=1&moduleToWidgetize=Actions&actionToWidgetize=getSiteSearchNoResultKeywords&idSite=1&period=range&date=previous30&disableLink=1&widget=1&keep_totals_row=1&filter_limit=10" 
             scrolling="yes"></iframe>
-        </div>
-    </div>
-
-
-    <div class="container">
-        <div class="box" style=width:100%>
-            <p> piwik all sites last 30 days</p>
-            <iframe class="iframe-scaled"
-                src="https://analytics.data.amsterdam.nl/index.php?module=Widgetize&action=iframe&moduleToWidgetize=MultiSites&actionToWidgetize=standalone&idSite=1&period=range&date=previous30"></iframe>
         </div>
     </div>
 
