@@ -4,6 +4,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
+    font-family:Arial
 }
 
 .container { /* create a static container that spans the entire page */
@@ -75,7 +76,7 @@ Since the container is already scaled it should take up a 100% of the width and 
     /* Top navigation (menu) bar */
 .topnav {
     overflow: hidden;
-    background-color: rgb(241, 240, 240);
+    background-color: #E6E6E6;
 }
 
 .topnav a {
@@ -89,13 +90,13 @@ Since the container is already scaled it should take up a 100% of the width and 
 }
 
 .topnav a:hover {
-    background-color: rgb(241, 240, 240);
-    color: #ff0034;
+    background-color: #F5F5F5;
+    color: #EC0000;
     text-decoration: underline;
 }
 
 .topnav a.active {
-    background-color: #4CAF50;
+    background-color: #00A03C;
     color: white;
 }
 

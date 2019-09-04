@@ -36,34 +36,43 @@
     </div>
 
     <div class="container">
-            <div class="box">
-                <p> Amount of non succesful http responses sorted on backend name</p>
+        <div class="box">
+            <h3> Amount of non succesful http responses sorted on backend name line chart </h3>
+            <iframe class="iframe-scaled"
+                src="https://logs.data.amsterdam.nl/app/kibana#/visualize/edit/ce5169a0-7afc-11e9-9935-d121f54db619?embed=true&_g=(refreshInterval%3A(pause%3A!f%2Cvalue%3A300000)%2Ctime%3A(from%3Anow-24h%2Cmode%3Aquick%2Cto%3Anow))">
+            </iframe>
+        </div>
+        <div class="box">
+            <h3> Non succesful http responses sorted on backend name, timestamp, http response code </h3>
+            <iframe class="iframe-scaled"
+                src="https://logs.data.amsterdam.nl/app/kibana#/visualize/edit/79166760-7aed-11e9-9935-d121f54db619?embed=true&_g=(refreshInterval%3A(pause%3A!f%2Cvalue%3A300000)%2Ctime%3A(from%3Anow-24h%2Cmode%3Aquick%2Cto%3Anow))">
+            </iframe>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <h3> Amount of non 200 http responses for cluster_client </h3>
                 <iframe class="iframe-scaled"
-                    src="https://logs.data.amsterdam.nl/app/kibana#/visualize/edit/84c6e990-7af7-11e9-9935-d121f54db619?embed=true&_g=(refreshInterval%3A(pause%3A!f%2Cvalue%3A300000)%2Ctime%3A(from%3Anow-24h%2Cmode%3Aquick%2Cto%3Anow))">
+                    src="https://logs.data.amsterdam.nl/app/kibana#/visualize/edit/355ca790-7afd-11e9-9935-d121f54db619?embed=true&_g=(refreshInterval%3A(pause%3A!f%2Cvalue%3A300000)%2Ctime%3A(from%3Anow-24h%2Cmode%3Aquick%2Cto%3Anow))">
                 </iframe>
             </div>
             <div class="box">
-                <p> Non succesful http responses sorted on backend name, then on timestamp, then on http response code</p>
+                <h3> Amount of non 200 http responses for cluster_mapproxy </h3>
                 <iframe class="iframe-scaled"
-                    src="https://logs.data.amsterdam.nl/app/kibana#/visualize/edit/79166760-7aed-11e9-9935-d121f54db619?embed=true&_g=(refreshInterval%3A(pause%3A!f%2Cvalue%3A300000)%2Ctime%3A(from%3Anow-24h%2Cmode%3Aquick%2Cto%3Anow))">
+                    src="https://logs.data.amsterdam.nl/app/kibana#/visualize/edit/e8e42310-cf1c-11e9-987f-cd224dd7dfd8?embed=true&_g=(refreshInterval%3A(pause%3A!f%2Cvalue%3A300000)%2Ctime%3A(from%3Anow-24h%2Cmode%3Aquick%2Cto%3Anow))">
                 </iframe>
             </div>
         </div>
+    </div>
 
-        <div class="container">
-                <div class="box">
-                    <p> Amount of 500s http responses sorted on backend name</p>
-                    <iframe class="iframe-scaled"
-                        src="https://logs.data.amsterdam.nl/app/kibana#/visualize/edit/ab6a20e0-c32b-11e9-987f-cd224dd7dfd8?embed=true&_g=(refreshInterval%3A(pause%3A!f%2Cvalue%3A300000)%2Ctime%3A(from%3Anow-24h%2Cmode%3Aquick%2Cto%3Anow))">
-                    </iframe>
-                </div>
-                <div class="box">
-                    <p> Amount of non 200 http responses for cluster_api_bag</p>
-                    <iframe class="iframe-scaled"
-                        src="https://logs.data.amsterdam.nl/app/kibana#/visualize/edit/f0216ad0-c32c-11e9-987f-cd224dd7dfd8?embed=true&_g=(refreshInterval%3A(pause%3A!f%2Cvalue%3A300000)%2Ctime%3A(from%3Anow-24h%2Cmode%3Aquick%2Cto%3Anow))">
-                    </iframe>
-                </div>
-            </div>
+    <div class="container">
+        <div class="box-wide">
+            <iframe class="iframe-scaled"
+                src="https://logs.data.amsterdam.nl/app/kibana#/discover/9d6dc9d0-cf1d-11e9-987f-cd224dd7dfd8?_g=(refreshInterval%3A(pause%3A!f%2Cvalue%3A300000)%2Ctime%3A(from%3Anow-24h%2Cmode%3Aquick%2Cto%3Anow))">
+            </iframe>
+        </div>
+    </div>
 
 </body>
 
